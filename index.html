@@ -5,34 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Greenback Site</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="assets/logo.png" alt="Logo del sito" class="logo">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chi siamo</a></li>
-        <li><a href="#">Contatti</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
       <h1>Benvenuto sul sito di Greenback</h1>
       <p>Questo è un sito semplice, creato per mostrare il logo e alcune informazioni di base.</p>
     </section>
+
+    <section id="chi-siamo">
+      <h2>Chi siamo</h2>
+      <p>Greenback è un'iniziativa volta a promuovere la sostenibilità ambientale attraverso soluzioni pratiche e innovative.</p>
+      <h3>Pitch del progetto:</h3>
+      <iframe 
+        src="docs/GreenBack%20Pitch.pdf" 
+        width="100%" 
+        height="600px" 
+        style="border: none;"
+        title="Greenback's Pitch">
+      </iframe>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>Puoi contattarci via email all'indirizzo: <a href="mailto:greenback@email.com">greenback@email.com</a></p>
+    </section>
   </main>
-  
-<iframe 
-  src="docs/GreenBack Pitch.pdf" 
-  width="100%" 
-  height="600px" 
-  style="border: none;"
-  title="Greenback's Pitch">
-</iframe>
-  
+
   <footer>
     <p>© 2025 Greenback. Tutti i diritti riservati.</p>
   </footer>
